@@ -1,11 +1,15 @@
-// formatTime - [MODULE] - Version 1.0.0
+// time - [MODULE] - Version 1.0.1
+// A JS module that contains time (and date) related functions.
+
+
+
+// formatTime - [function]
 // When passed a date object, will return object.
 // obj:{
 //     hours: hours,
 //     minutes: minutes,
 //     seconds: seconds
 // } 
-
 function formatTime(time){
     var hours = Math.floor(time / 3600000); // 1 hour = 3600000 milliseconds
     var minutes = Math.floor((time % 3600000) / 60000); // 1 minute = 60000 milliseconds
@@ -17,7 +21,8 @@ function formatTime(time){
         minutes: minutes,
         seconds: seconds
     };
-}
+} // formatTime
+
 
 
 export { formatTime as formatTime }
